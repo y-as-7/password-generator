@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pawword generator</title>
+</head>
+<body>
+
+
+<!--start main  container of the app-->
+<div class="con">
+
+    <!--start title-->
+    <div class="title">
+        <h2>password generator</h2>
+    </div>
+    <!--end title-->
+    <!--*********************************************************-->
+    <!--start output-->
+    <div class="output">
+        <div class="out-title">
+            <span>password</span>
+            <span id="copy" class="copy">copy</span>
+        </div>
+        <h2 class="pass-generated" id="pass-generated"></h2>
+        <!--error-->
+        <span id="error">enter number between 10 and 30</span>
+        <!--error-->
+    </div>
+    <!--end output-->
+    <!--*********************************************************-->
+    <!--strat main-->
+    <div class="main">
+        <!--password lenght-->
+        <div>
+            <label for="pass_len">Password Lenght: from 10 to 30 </label>
+            <input maxlength="30" placeholder=" lenght" type="number" name="pass_len" id="pass_len">
+        </div>
+        <!--numbers-->
+        <div>
+            <input type="checkbox" name="number" id="number">
+        <label for="number">numbers</label>
+        </div>
+        <!--lowercase-->
+        <div>
+            <input type="checkbox" name="lowerCase" id="lowerCase">
+        <label for="lowerCase">lowerCase</label>
+        </div>
+        <!--upperCase-->
+        <div>
+            <input type="checkbox" name="upperCase" id="upperCase">
+        <label for="upperCase">upperCase</label>
+        </div>
+        <!--symbols-->
+        <div>
+            <input type="checkbox" name="symbols" id="symbols">
+        <label for="symbols">symbols</label>
+        </div>
+    </div>
+    <!--end main-->
+    <!--*********************************************************-->
+    <!--start btn-->
+    <button id="btn" class="btn">Generate</button>
+    <!--end btn-->
+</div>
+<!--end main container of the app-->
+
+<script src="main.js"></script>
+</body>
+</html>

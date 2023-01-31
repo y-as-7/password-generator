@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(182, 184, 199, 0.426);
+}
+.con{
+    margin: 100px auto;;
+    width: 500px;
+}
+
+.con .title{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(49, 46, 46);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.output{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.output #error{
+    content: "Enter number between 10 and 30";
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+.output h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.output .out-title{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(112, 116, 119);
+}
+
+.output .out-title .copy {
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+.main div{
+    width: 500px;
+    margin-bottom: .2rem;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0 0 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.main div input{
+    margin-right: 15px;
+    width: 40px;
+    height: 15px;
+}
+
+.con .btn{
+    font-size: 1.5rem;
+    position: relative;
+    left: 35%;
+    padding: 5px 27px;
+    background-color: rgba(4, 0, 255, 0.757);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.main div:first-child{
+    padding-left: 50px;
+}
+.main div:first-child label{
+    margin-right: 10px;
+}
+.main div:first-child input{
+    width: 20%;
+    height: 10px;
+    padding: 10px;
+    outline: none;
+    position: relative;
+    bottom: 4px;
+}
